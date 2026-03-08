@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Cart | TastyBite</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    
+    <link rel="stylesheet" href="cart.css">
+    
+</head>
+<body>
+
+    <header class="header">
+        <a href="index.html" class="logo"><i class="fas fa-utensils"></i> Tasty<span>Bite</span></a>
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="index.html#menu">Menu</a>
+        </nav>
+        <div class="icons">
+            <a href="index.html" class="fas fa-arrow-left" style="font-size: 2rem; color: var(--black);"> Back</a>
+        </div>
+    </header>
+
+    <section class="cart-container">
+        <h1 class="heading">Shopping <span>Cart</span></h1>
+
+        <table class="cart-table">
+            <thead>
+                <tr>
+                    <th>Product</th>
+                    <th>Name</th>
+                    <th>Price</th>
+                    <th>Quantity</th>
+                    <th>Total</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td data-label="Product"><img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?q=80&w=200" alt=""></td>
+                    <td data-label="Name">Supreme Pizza</td>
+                    <td data-label="Price">₹499</td>
+                    <td data-label="Quantity"><input type="number" value="1" class="quantity-input"></td>
+                    <td data-label="Total">₹499</td>
+                    <td data-label="Action"><i class="fas fa-trash remove-btn"></i></td>
+                </tr>
+                <tr>
+                    <td data-label="Product"><img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?q=80&w=200" alt=""></td>
+                    <td data-label="Name">Classic Burger</td>
+                    <td data-label="Price">₹199</td>
+                    <td data-label="Quantity"><input type="number" value="2" class="quantity-input"></td>
+                    <td data-label="Total">₹398</td>
+                    <td data-label="Action"><i class="fas fa-trash remove-btn"></i></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="cart-total">
+            <h3>Subtotal: <span>₹897</span></h3>
+            <p style="font-size: 1.4rem; color: #666;">Taxes and shipping calculated at checkout</p>
+            <a href="#" class="btn checkout-btn">Proceed to Checkout</a>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="credit">Created by <span>TastyBite</span> | © 2026 All Rights Reserved</div>
+    </footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
